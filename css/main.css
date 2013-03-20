@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_free_bold-webfont.eot');
+    src: url('../fonts/nexa_free_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_free_bold-webfont.woff') format('woff'),
+         url('../fonts/nexa_free_bold-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_free_bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_light-webfont.eot');
+    src: url('../fonts/nexa_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nexa_light-webfont.woff') format('woff'),
+         url('../fonts/nexa_light-webfont.ttf') format('truetype'),
+         url('../fonts/nexa_light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  width:100%;
+  background:url('../img/bg.png') repeat transparent 0 0;
+  margin:0;
+  padding:0;
+  min-width:400px;
+}
+
+.wrapper {
+  width:94%;
+  margin:0 auto;
+  font-family: 'nexa_lightregular', Verdana, sans-serif;
+}
+
+header {
+  background-color:#e31b23;
+  width:100%;
+  height:30px;
+}
+
+.referFriend h2 {
+  color:#e31b23;
+  font-size:32px;
+  margin:5px 0 0 0;
+  text-align:center;
+  font-weight:normal;
+}
+
+.referFriend p {
+  color:#999;
+  text-align:center;
+  font-size:16px;
+  margin:0;
+}
+
+.referFriend input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:28px 10px;
+  font-size:16px;
+  border-radius:0;
+  display:block;
+  width:100%;
+  margin:5px 0;
+  color:#999;
+}
+
+.referFriend ul {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background:#fff;
+  margin:5px 0 0 0;
+  width:100%;
+  -webkit-box-shadow:  0px 0px 7px 0px rgba(55, 55, 55, .2);
+  box-shadow:  0px 0px 7px 0px rgba(55, 55, 55, .2);
+}
+
+.referFriend li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style:none;
+  padding:0 10px;
+  width:100%;
+  margin:0;
+  cursor:pointer;
+}
+
+.referFriend .active {
+  background-color:#eee;
+}
+
+.referFriend li h4 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color:#e31b23;
+  font-size:18px;
+  font-weight:normal;
+  padding:20px 0;
+  margin:0;
+}
+
+.referFriend li i {
+  color:#999;
+  margin:0 15px 0 15px;
+}
+
+.referFriend #starterGuide h4 {
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+  margin:0;
+}
+
+.referFriend .refer {
+  margin:15px auto;
+  width:95%;
+  color:#fff;
+  padding:20px 0;
+  font-size:24px;
+  background: #f15b59; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f15b59 0%, #c33430 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f15b59), color-stop(100%,#c33430)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f15b59 0%,#c33430 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f15b59 0%,#c33430 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f15b59 0%,#c33430 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f15b59 0%,#c33430 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15b59', endColorstr='#c33430',GradientType=0 ); /* IE6-9 */
+}
