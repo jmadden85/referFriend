@@ -44,10 +44,10 @@ header {
 
 .referFriend h2 {
   color:#e31b23;
-  font-size:32px;
+  font-size:26px;
   margin:5px 0 0 0;
   text-align:center;
-  font-weight:normal;
+  font-family: 'nexa_boldregular', Verdana, sans-serif;
 }
 
 .referFriend p {
@@ -118,7 +118,7 @@ header {
   margin:0;
 }
 
-.referFriend .refer {
+.referFriend .refer, .referFriend .signIn, .referFriend .sendUserInfo, .referFriend .sendPasswordInfo {
   margin:15px auto;
   width:95%;
   color:#fff;
@@ -132,4 +132,43 @@ header {
   background: -ms-linear-gradient(top,  #f15b59 0%,#c33430 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #f15b59 0%,#c33430 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15b59', endColorstr='#c33430',GradientType=0 ); /* IE6-9 */
+}
+
+/******************************************************************
+  Not Signed In
+******************************************************************/
+
+.fbSignIn {
+  background:url('../img/fb.png') 0 0 no-repeat transparent;
+  display:block;
+  height:55px;
+  margin:15px auto;
+  width:330px;
+}
+
+.notSignedIn .or {
+  margin:0 0 15px 0;
+}
+
+.notSignedIn .visit {
+  color:#e31b23;
+  display:block;
+  text-align:center;
+  font-size:18px;
+  font-family: 'nexa_boldregular', Verdana, sans-serif;
+}
+
+.inputQuestionBox {
+  position:relative;
+}
+
+.inputQuestionBox a {
+  display:block;
+  height:48px;
+  width:43px;
+  position:absolute;
+  top:5px;
+  right:6px;
+  background:url('../img/question.png') 0 0 no-repeat transparent;
+  z-index:25;
 }

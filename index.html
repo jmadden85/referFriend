@@ -16,37 +16,75 @@
 
     <section class="wrapper referFriend">
 
-      <h2>Refer a Friend</h2>
-      <p>They'll get an email from us.</p>
+      <section class="notSignedIn shown">
 
-      <input type="text" placeholder="Full Name" id="name">
-      <input type="email" placeholder="Email" id="email">
+        <h2>Sign in to refer</h2>
+        <p>We'll keep you signed in so it's easy to refer anytime, right from your phone.</p>
 
-<!--       <h2>Include a Guide?</h2>
-      <p>We'll send them a guide of your choice.</p>
+        <a href="#" data-nextWindow="signedIn" class="fbSignIn showHide"></a>
 
-      <ul>
-        <li id="programGuide">
-          <h4><i class="icon-book"></i> Program Guide</h4>
-        </li>
+        <p class="or">- or -</p>
 
-        <li id="starterGuide">
-          <h4><i class="icon-briefcase"></i> Health Coach Starter Guide</h4>
-        </li>
+        <div class="inputQuestionBox">
+          <input type="text" placeholder="Username" id="userName">
+          <a href="#" id="userNameQuestion" class="showHide" data-nextWindow="forgotName"></a>
+        </div>
 
-        <li id="justEmail">
-          <h4><i class="icon-envelope"></i> Just send the email</h4>
-        </li>
-      </ul> -->
+        <div class="inputQuestionBox">
+          <input type="password" placeholder="Password" id="password">
+          <a href="#" id="passwordQuestion" class="showHide" data-nextWindow="forgotPassword"></a>
+        </div>
 
-      <button class="btn btn-large btn-block refer">Refer</button>
+        <button class="btn btn-large btn-block signIn showHide" data-nextWindow="signedIn">Sign In</button>
+
+        <a href="#" class="visit">visit shareiin.com</a>
+
+      </section>
+
+      <section class="forgotName hidden">
+
+        <h2>Forgot your user name?</h2>
+
+        <p>Hey, it happens to everyone.  Just let us know what email address you used to sign up and we'll send you an email with instructions.</p>
+
+        <input type="email" placeholder="Email" id="forgotUserName" />
+
+        <button class="btn btn-large btn-block sendUserInfo showHide" data-nextWindow="notSignedIn">Send</button>
+
+      </section>
+
+      <section class="forgotPassword hidden">
+
+        <h2>Forgot your password?</h2>
+
+        <p>Hey, it happens to everyone.  Just let us know your user name and we'll send you an email with instructions.</p>
+
+        <input type="text" placeholder="Username" id="forgotPassword" />
+
+        <button class="btn btn-large btn-block sendPasswordInfo showHide" data-nextWindow="notSignedIn">Send</button>
+
+      </section>
+
+      <section class="signedIn hidden">
+
+        <h2>Refer a Friend</h2>
+        <p>They'll get an email from us.</p>
+
+        <input type="text" placeholder="Full Name" id="name">
+        <input type="email" placeholder="Email" id="email">
+
+        <button class="btn btn-large btn-block refer">Refer</button>
 
       <p id="zipCode"></p>
+
+      </section>
 
     </section>
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAw-Dx-FTKiGIfr-hVfE3z6XldjIGi_fWI&sensor=true"></script>
     <script src="js/main.js"></script>
   </body>
